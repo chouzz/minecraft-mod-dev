@@ -1,0 +1,23 @@
+{
+  "name": "chouzz-plugins",
+  "owner": {
+    "name": "chouzz"
+  },
+  "metadata": {
+    "description": "Personal Claude Code plugins by chouzz"
+  },
+  "plugins": [
+    {
+      "name": "minecraft-mod-dev",
+      "source": ".",
+      "description": "A Claude Code plugin for Minecraft mod development with modern loaders (NeoForge/Fabric) and ecosystem interoperability.",
+      "version": "1.0.0",
+      "author": {
+        "name": "chouzz"
+      },
+      "license": "MIT",
+      "keywords": ["minecraft", "mod", "neoforge", "fabric", "game-dev"],
+      "category": "development"
+    }
+  ]
+}

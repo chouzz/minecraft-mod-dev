@@ -1,6 +1,6 @@
-# Minecraft Mod Development Skill
+# Minecraft Mod Development Plugin
 
-A Claude Code skill for Minecraft mod development with modern loaders (NeoForge/Fabric) and ecosystem interoperability.
+A Claude Code plugin for Minecraft mod development with modern loaders (NeoForge/Fabric) and ecosystem interoperability.
 
 ## Features
 
@@ -11,11 +11,14 @@ A Claude Code skill for Minecraft mod development with modern loaders (NeoForge/
 
 ## Installation
 
-Place this skill in your Claude Code skills directory:
+Add the marketplace and install the plugin:
 
 ```bash
-~/.claude/skills/minecraft-mod-dev/
+/plugin marketplace add chouzz/minecraft-mod-dev
+/plugin install minecraft-mod-dev@chouzz-plugins
 ```
+
+Or run `/plugin` and go to the **Marketplaces** tab to add, then **Discover** to install.
 
 ## Usage Triggers
 
@@ -43,3 +46,11 @@ The skill will guide you through:
 - [NeoForge Docs](https://docs.neoforged.net/)
 - [Fabric Wiki](https://fabricmc.net/wiki/)
 - See `references/mod-links.md` for more API documentation
+
+## Development
+
+To test the plugin locally during development:
+
+```bash
+claude --plugin-dir /path/to/minecraft-mod-dev
+```
