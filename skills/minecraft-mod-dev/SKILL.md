@@ -35,5 +35,18 @@ Before implementing custom systems, check for integration opportunities:
 ## Documentation References
 See `references/mod-links.md` for links to official loaders and popular mod APIs.
 
+## Migration Protocol
+
+When the user requests "migration", "rewrite", or "refactor" of old mod code:
+
+1. **Read Migration Guide:** You MUST first read `references/migration-guide.md`.
+2. **Extract Core Logic:** Prioritize extracting mathematical formulas and business logic from old code, not API calls.
+3. **Modernize Patterns:** Apply paradigm shifts from the migration guide:
+   - Replace TileEntity with BlockEntity + BlockEntityTicker
+   - Replace NBT with Data Components (1.20.5+)
+   - Replace hardcoded JSON with DataProvider
+4. **Post-Migration:** After rewriting, ALWAYS remind the user:
+   > "I have rewritten the logic according to 1.21+ specifications. Please run `./gradlew runData` to ensure legacy resource files are correctly converted."
+
 ## Environment Check
 Run `scripts/mod-env-check.sh` to auto-detect current project configuration.
