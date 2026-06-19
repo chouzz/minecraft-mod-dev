@@ -1,7 +1,8 @@
 # Minecraft Modding Documentation Index
 
 ## Official Loaders
-- **NeoForge 1.21:** https://docs.neoforged.net/docs/1.21.1/
+- **NeoForge 1.21:** https://docs.neoforged.net/docs/1.21.1/gettingstarted/
+- **NeoForge Latest:** https://docs.neoforged.net/docs/gettingstarted/
 - **Fabric Wiki:** https://wiki.fabricmc.net/develop:start
 
 ## Popular Mod APIs
