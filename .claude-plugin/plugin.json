@@ -2,7 +2,9 @@
   "name": "minecraft-mod-dev",
   "version": "1.0.0",
   "description": "A Claude Code plugin for Minecraft mod development with modern loaders (NeoForge/Fabric) and ecosystem interoperability.",
-  "author": "chouzz",
+  "author": {
+    "name": "chouzz"
+  },
   "license": "MIT",
   "homepage": "https://github.com/chouzz/minecraft-mod-dev"
 }
