@@ -66,11 +66,7 @@ When you (AI) are asked to migrate a specific class, execute the following steps
 
 ## 5. Notes for Minecraft 1.26.1 (Checklist and migration points)
 
-This section contains a conservative checklist of areas to inspect when targeting Minecraft 1.26.1 and the corresponding NeoForge/Fabric loaders. It does not claim to be an exhaustive changelog; instead it highlights the most common sources of breakage and recommended verification steps. Use the NeoForge and Fabric developer docs as the authoritative references:
-
-- NeoForge getting started: https://docs.neoforged.net/docs/gettingstarted/
-- Fabric development: https://docs.fabricmc.net/develop/
-
+This section contains a conservative checklist of areas to inspect when targeting Minecraft 1.26.1 and the corresponding NeoForge/Fabric loaders. It does not claim to be an exhaustive changelog; instead it highlights the most common sources of breakage and recommended verification steps.
 Checklist (high priority)
 
 - Mappings
@@ -144,15 +140,3 @@ Recommended migration workflow
 3. Run data generation and validate the produced resources.
 4. Start the client with a minimal mod setup and watch logs for ClassNotFound/NoSuchMethod/NoSuchField errors.
 5. Iterate: fix one subsystem (e.g., block entities), re-run, and smoke-test.
-
-What I changed in this repo
-
-- I added this "Notes for Minecraft 1.26.1" checklist to the migration guide so you have a concise list of high-impact areas to inspect when migrating from 1.21+ to 1.26.1. The section points to the NeoForge and Fabric developer docs you supplied as authoritative next reads.
-
-What's next (suggested)
-
-- If you want, I can:
-  - Run a quick lexical code search in this repository for the grep patterns above and return a prioritized list of files to update.
-  - Draft concrete code examples showing how to replace common legacy idioms (TileEntity -> BlockEntity, NBT -> Data Components, old registry code -> DeferredRegister) adapted to NeoForge/Fabric patterns.
-
-If you'd like me to scan the repo for specific legacy usages now, say which patterns to search for and I'll run the search and list the matches.
